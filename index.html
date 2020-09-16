@@ -1,84 +1,43 @@
-<!-- htmL-də şərh səitirləri bu işarələr daxilində yazılır. Browser < !bu işarələr daxilindəki yazıları nəzərə almır-->
-
-<!-- doctype tag-i browser-e html5 istifade edeceyimizi bildirir -->
 <!DOCTYPE html>
-<!-- Html senedinin butun mezmunu <html></html> tag-leri arasinda yerlesir. Butun html senedlerinde bu teq istifade olunur. Iki alt elementi var: head ve body-->
 <html>
+    <head>
+        <title>Metn teqleri</title>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 6</h5>
+        <h6>Header 6</h6>
 
-<!-- Head browser ucun lazim olan, istifadecinin  browserin esas penceresinde visual sekilde gormeyeceyi emrleri daxil etmek ucun istifade olunur. -->
-<head>
-	<!-- <meta charset="utf-8"> tag-i browser-e unicode istifade etmeli oldugunu gosterir. Daxilinde melumat yerlesmediyi, sadece unicode istifade edileceyini browser-e yoneltdiyi ucun </meta> seklinde bir baglanma tag-i YOXDUR-->
-	<meta charset="utf-8">
-	<!-- Title tag-i daxilinde bruzer penceresinin basliginda ne yazilacagi gorunur (tab-in basliq hissesinde). Istifadeci browser-de sehifeni favorite ve ya bookmark kimi isareleyirse, titledaki adi ile yadda saxlanilir-->
-	<title>Text elements</title>
-</head>
+        <hr>
+        
+        <p>Lorem ipsum <br>dolor sit <em>amet</em> consectetur, adipisicing elit. Quas, omnis saepe recusandae ab deleniti accusantium dolore praesentium? 
 
-<!-- Istifadecinin brauzer penceresinde goreceyi melumatlar, saytin mezmunu <body></body> tag-i daxilinde yerlesir. -->
-<body>
-	<!-- Metn basliqlarini elave etmek ucun h1-h6 tag-lari istifade olunur. h1 olcu olaraq en boyuk, h6 ise en kicik basliqdir -->
-	<h1>Header 1</h1>
-	<h2>Header 2</h2>
-	<h3>Header 3</h3>
-	<h4>Header 4</h4>
-	<h5>Header 5</h5>
-	<h6>Header 6</h6>
+        Nulla sunt, facilis dolore temporibus quasi ex debitis, tempora, cum eum necessitatibus id!</p>
 
-	<!-- Paraqraflar p tagi vasitesi ile elave olunur. Metn <p></p> teqleri daxilinde yazilir. 
-		Metni qalin shirift daxil etmek ucun <b></b> ve ya <strong></strong>. Her ikisi ile goruntu cehetden tamamile eyni tip qalin srift elde ede bilersiz. SEO (saytinizin internet axtarisinda daha asan tapilmasini temin eden usullar) ucun de ciddi bir ferqleri yoxdur. (https://www.youtube.com/watch?v=uLT1NE2ytNE) Ferq esasen screen reader proqramlar ucundur. Eger metni sadece stil olaraq ferlqndirmek lazimdirsa <b></b> istifade ede bilersiz. 
-		Eger ferq semantik cehetdendirse, hansi soz nezere catdirilmalidirsa, hansisa soz daha cox vurgulanmalidirsa, bu zaman <strong></strong> istifade edirsiz.
-		Eyni sekilde italic yazini  elave etmek ucun <i></i> ve <em></em> taglar-i movcuddur. Eyni qaydada i tag-i stil tetbiqi, <em> ise semantik ferqlendirme ucun istifade olunur.-->
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <pre>
+            All my troubles seemed so far away
+            Now it looks as though they're here to stay
+            Oh, I believe in 
+            yesterday
+            Suddenly
+            I'm not half the man I used to be
+            There's a shadow hangin' over me
+            Oh, yesterday came suddenly
+        </pre>
 
-	<!-- Web browser p tagi daxilinde yerlesen bosluqlari, yeni setirleri legv edir, metni tek bir paraqraf formasinda gosterir (Meselen, iki soz arasinda birden cox bosluq daxil edilibse, sadece biri nezere alinir.) pre tag-i(preformating sozunden secilib) metnin bu cur formatlasdirmaya tabe tutulmadan evvelki halini, butun bosluqlar, new line da daxil olmaqla editorda yazildigi formasini gostermek ucun istifade olunur.  -->
-	<!-- <u></u> - underline. Altxett elave etmek ucun istifade olunur-->
-	<pre><b>Yesterday</b>, <i><u><b>all</b></u></i> <em>my </em>troubles seemed so far away
-<strong>Now</strong> it looks as though they're here to stay
-Oh, I believe in yesterday
-
-Suddenly, I'm not half the man I used to be
-There's a shadow hanging over me
-Oh, yesterday came suddenly
-
-Why she had to go I don't know she wouldn't say
-I said something wrong, now I long for yesterday
-Yesterday, love was such an easy game to play
-Now I need a place to hide away
-Oh, I believe in yesterday
-</pre>
-
-<!-- Siyahilar (lists) elave etmek ucun <ol> ve ya <ul> tag-lari istifade olunur. 
-	<ol> - ordered list - reqemlerle gosterilen, sirali siyahilar
-	<ul> - unordered list - isarelerle gosterilen sirasizsiyahilar
--->
-<!-- list style xususiyyeti elementin isaresini deyismek ucun istifade olunur. 
-	circle ve square qiymetleri movcuddur.
--->
-<ul style="list-style:circle">
-	<li>Veb layihələndirmə
-	<ol>
-		<li>Html</li>
-		<li>CSS</li>
-		<li>JS</li>
-	</ol>
-	</li>
-	<li>MPL
-		<ul>
-			<li>C#</li>
-			<li>Java</li>
-		</ul>
-	
-	</li>
-	<li>ES</li>
-</ul>
-
-
-<p>H<sub>2</sub>O<sup>3</sup></p>
-
-</body>
-
+        <ol type="I">
+           <li>Coffee
+            <ol type="a">
+                <li>Espresso</li>
+                <li>Latte</li>
+            </ol>
+           </li>
+           <li>tea</li>
+           <li>water</li>
+           <li>icetea</li>
+        </ol>
+    </body>
 </html>
